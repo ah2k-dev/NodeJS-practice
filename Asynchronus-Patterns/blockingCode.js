@@ -2,7 +2,7 @@ const http = require('http')
 
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
-    res.end('Home Page')
+    res.write('Home Page')
   }
   if (req.url === '/about') {
     // blocking code
